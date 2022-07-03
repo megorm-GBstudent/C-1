@@ -62,7 +62,7 @@ Console.WriteLine("Последнее число");
 Console.WriteLine(b);
 */
 
-//Домашнее задание
+//Домашнее задание (1 семинар)
 
 /*
 //Задание 1
@@ -270,7 +270,7 @@ else
 }
 */
 
-//Домашняя работа
+//Домашняя работа (2 семинар)
 
 //Задача 15 (вариант 1)
 
@@ -321,4 +321,179 @@ else
 {
     Console.WriteLine("третьей цифры нет");
 }
+*/
+
+
+
+
+
+
+
+//SEMINAR 3
+
+
+//Задача 17
+/*
+Console.WriteLine("Введите координаты x: ");
+int x = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координаты y: ");
+int y = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine($"[{x}; {y}]");
+
+if (x == 0 || y == 0)
+{
+    Console.WriteLine("Введите ненулевые значения");
+}
+else
+{
+    if (x > 0 && y > 0)
+    {
+        Console.WriteLine("точка лежит в 1 четверти");
+    }
+    else if (x < 0 && y > 0)
+    {
+        Console.WriteLine("точка лежит вo 2 четверти");
+    }
+    else if (x < 0 && y < 0)
+    {
+        Console.WriteLine("точка лежит в 3 четверти");
+    }
+    else
+    {
+        Console.WriteLine("точка лежит в 4 четверти");
+    }
+}
+*/
+
+//Задача 18
+
+/*
+Console.WriteLine("Введите координаты значение от 1 до 4: ");
+int x = Convert.ToInt32(Console.ReadLine());
+
+if (x == 1)
+{
+    Console.WriteLine("(0;+ беск); (0; +беск)");
+}
+else if (x == 2)
+{
+    Console.WriteLine("(-беск; 0); (0; +беск)");
+}
+else if (x == 3)
+{
+    Console.WriteLine("(-беск; 0); (0; -беск)");
+}
+else if (x == 4)
+{
+    Console.WriteLine("(0; +беск); (0; -беск)");
+}
+*/
+
+
+//Задача 21
+
+/*
+Console.WriteLine("Введите координаты значение x1: ");
+int x1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координаты значение y1: ");
+int y1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координаты значение x2: ");
+int x2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координаты значение y2: ");
+int y2 = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine($"Координаты точки А: [{x1}; {y1}]");
+Console.WriteLine($"Координаты точки B: [{x2}; {y2}]");
+
+Console.WriteLine("Расстояние между точками А и B равно: ");
+Console.WriteLine(Math.Sqrt(Math.Pow(x2-x1, 2) + Math.Pow(y2-y1, 2)));
+*/
+
+//Задача 21 (второй способ с массивами)
+
+/*
+int[] pointA = new int[2] {5, 9};
+int[] pointB = new int[2];
+pointB[0] = 2;
+pointB[1] = 5;
+
+Console.WriteLine(Math.Sqrt(Math.Pow(pointA[0]-pointB[0],2) + Math.Pow(pointA[1] - pointB[1], 2)));
+*/
+
+//Задача 22
+
+/*
+Console.WriteLine("Введите число:");
+int n = Convert.ToInt32(Console.ReadLine());
+int a = 1;
+
+while (a <= n)
+{
+    Console.WriteLine(a*a);
+    a++;
+}
+*/
+
+
+
+
+
+//Домашняя работа (семинар 3)
+
+//Задача 23
+/*
+Console.WriteLine("Введите число:");
+int n = Convert.ToInt32(Console.ReadLine());
+int a = 1;
+
+while (a <= n)
+{
+    Console.WriteLine($"{a} --> {Math.Pow(a, 3)}");
+    a++;
+}
+*/
+
+//Задача 19
+/*
+Console.WriteLine("Введите пятизначное число:");
+int a = Convert.ToInt32(Console.ReadLine());
+
+if (a > 9999 && a < 100000)
+{
+    if (a.ToString()[0] == a.ToString()[4] && a.ToString()[1] == a.ToString()[3])
+    {
+        Console.WriteLine("Число является палиндромом");
+    }
+    else
+    {
+        Console.WriteLine("Число не является палиндромом");
+    }
+
+}
+else
+{
+    Console.WriteLine("Введено неверное число");
+}
+*/
+
+//Задача 21
+/*
+Console.WriteLine("Введите координаты значение x1: ");
+int x1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координаты значение y1: ");
+int y1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координаты значение z1: ");
+int z1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координаты значение x2: ");
+int x2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координаты значение y2: ");
+int y2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координаты значение z2: ");
+int z2 = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine($"Координаты точки А: [{x1}; {y1}; {z1}]");
+Console.WriteLine($"Координаты точки B: [{x2}; {y2}; {z2}]");
+
+Console.WriteLine("Расстояние между точками А и B равно: ");
+Console.WriteLine(Math.Sqrt(Math.Pow(x2-x1, 2) + Math.Pow(y2-y1, 2) + Math.Pow(z2-z1, 2)));
 */
